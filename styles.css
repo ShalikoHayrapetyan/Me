@@ -1,0 +1,184 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(223, 218, 228);
+}
+
+header {
+	display: flex;
+	height: 200px;
+	width: 100%;
+	display: flex;
+}
+
+.hi {
+	margin: auto;
+}
+
+.hitext {
+	font-size: 40px;
+	letter-spacing: 7px;
+	transform: rotate(360deg);
+	transition: 1.5s;
+}
+
+.acountphoto {
+	background-image: url("img/Shaliko.jpg");
+	background-size: cover;
+	background-position: 50% 50%;
+	min-width: 170px;
+	height: 170px;
+	border-radius: 50%;
+	border: blueviolet solid 2px;
+	transform: rotate(360deg);
+	transition: 1.5s;
+	opacity: 0.5;
+}
+
+.acountphoto:hover {
+	opacity: 1;
+}
+
+.social {
+	display: flex;
+	width: 200px;
+	height: 200px;
+}
+
+.facebook {
+	margin: 7px;
+	width: 40%;
+	height: 40%;
+	background-image: url("img/facebook.jpg");
+	background-size: cover;
+	animation: rotate 2.5s infinite alternate;
+}
+
+.facebook:hover {
+	transform: scale(1.5);
+}
+
+.instagram {
+	margin: 7px;
+	width: 40%;
+	height: 40%;
+	background-image: url("img/instagram.png");
+	background-size: cover;
+	animation: rotate 2.5s infinite alternate;
+}
+
+.instagram:hover {
+	transform: scale(1.5);
+}
+
+main {
+	justify-content: space-around;
+	display: flex;
+}
+
+.bio {
+	height: 350px;
+	background-color: rgba(226, 243, 73, 0.384);
+	flex: 1;
+}
+
+.bio:hover {
+	flex: 1.5;
+}
+
+.mainP {
+	letter-spacing: 5px;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	transform: rotate(360deg);
+	transition: 1.5s;
+}
+
+.mainP:hover {
+	color: blue;
+	transform: scale(1.2);
+	letter-spacing: 12px;
+}
+
+.education {
+	padding: 0 10px;
+	height: 350px;
+	background-color: rgba(222, 135, 193, 0.35);
+	flex: 1;
+}
+
+.education:hover {
+	flex: 1.5;
+}
+
+.contact {
+	height: 350px;
+	background-color: rgba(192, 155, 55, 0.35);
+	flex: 1;
+}
+
+.contact:hover {
+	flex: 1.5;
+}
+
+.text {
+	margin: 10px;
+}
+
+.text :hover {
+	transition: 0.5s;
+	color: red;
+	transform: translateX(5px);
+}
+
+.text p {
+	font-family: serif;
+	margin-left: 10px;
+}
+
+.contactIcon1 {
+	background-image: url("img/call.webp");
+	background-size: cover;
+	min-width: 20px;
+	min-height: 20px;
+	margin: 0, 20px;
+}
+
+.contactIcon2 {
+	background-image: url("img/letter.png");
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+}
+
+.contactIcon3 {
+	background-image: url("img/location.jpg");
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+}
+
+.contactdiv {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(360deg);
+	}
+	to {}
+}
+
+@media only screen and (max-width: 800px) {
+	.hitext {
+		font-size: 25px;
+		letter-spacing: 1px;
+		transform: rotate(360deg);
+		transition: 1.5s;
+	}
+	main {
+		display: block;
+	}
+}
